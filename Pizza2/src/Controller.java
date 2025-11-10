@@ -13,6 +13,7 @@ public class Controller
 	private DefaultComboBoxModel<Groesse> dcbmGroesse = new DefaultComboBoxModel<Groesse>();
 	private DefaultListModel<Warenkorb> warenkorb = new DefaultListModel<>();
 	private ArrayList<Warenkorb> warenkorbListe = new ArrayList<>();
+	private double gesamtPreis = 0.00;
 
 	private Gui gui;
 
@@ -90,6 +91,7 @@ public class Controller
 		Warenkorb temp = new Warenkorb(pizza, groesse, extras);
 		warenkorbListe.add(temp);
 		warenkorb.addElement(temp);
+		gesamtPreisBerechnen();
 	}
 
 	public void entfernen(Object o)
@@ -105,5 +107,9 @@ public class Controller
 
 	public void gesamtPreisBerechnen()
 	{
+		Pizza selectedPizza = (Pizza) gui.getComboBoxPizza().getSelectedItem();
+	    gesamtPreis += selectedPizza.getPreis();
+
+	    gui.getLblPreisGesamt().setText(Math.round(gesamtPreis * 100.0) / 100.0 + " €");
 	}
 }

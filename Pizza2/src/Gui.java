@@ -112,7 +112,6 @@ public class Gui extends JFrame
 				public void actionPerformed(ActionEvent e)
 				{
 					controller.hinzufuegen((Pizza)getComboBoxPizza().getSelectedItem(), (Groesse)getComboBoxGroesse().getSelectedItem(), (Extras)getComboBoxExtras().getSelectedItem());
-					controller.gesamtPreisBerechnen();
 				}
 			});
 			btnHinzufuegen.setFont(new Font("Tahoma", Font.PLAIN, 14));
@@ -181,7 +180,7 @@ public class Gui extends JFrame
 		return lblPreisPizza;
 	}
 
-	private JLabel getLblPreisGesamt()
+	protected JLabel getLblPreisGesamt()
 	{
 		if (lblPreisGesamt == null) {
 			lblPreisGesamt = new JLabel("0,00 €");
