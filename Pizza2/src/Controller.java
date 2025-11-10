@@ -5,6 +5,8 @@ import javax.swing.DefaultListModel;
 
 public class Controller
 {
+//Hallo wie geht es dir?
+	
 	private ArrayList<Pizza> pizzaListe = new ArrayList<Pizza>();
 	private DefaultComboBoxModel<Pizza> dcbmPizza = new DefaultComboBoxModel<Pizza>();
 	private ArrayList<Extras> ExtrasListe = new ArrayList<Extras>();
