@@ -79,6 +79,7 @@ public class Gui extends JFrame
 			{
 				public void actionPerformed(ActionEvent e)
 				{
+					controller.bestellen();
 				}
 			});
 			btnBestellen.setBounds(520, 349, 107, 102);

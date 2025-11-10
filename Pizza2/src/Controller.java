@@ -3,6 +3,8 @@ import java.util.ArrayList;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.DefaultListModel;
 
+import static javax.swing.JOptionPane.showMessageDialog; //für allerbox
+
 public class Controller
 {
 	private ArrayList<Pizza> pizzaListe = new ArrayList<Pizza>();
@@ -111,5 +113,10 @@ public class Controller
 	    gesamtPreis += selectedPizza.getPreis();
 
 	    gui.getLblPreisGesamt().setText(Math.round(gesamtPreis * 100.0) / 100.0 + " €");
+	}
+	
+	public void bestellen()
+	{
+		showMessageDialog(null, "Der Endpreis beträgt: " + (gesamtPreis * 100.0) / 100.0 + " €");
 	}
 }
