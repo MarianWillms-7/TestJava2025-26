@@ -15,7 +15,7 @@ public class Controller
 	private ArrayList<Warenkorb> warenkorbListe = new ArrayList<>();
 
 	private Gui gui;
-	
+
 	public Controller()
 	{
 		this.gui = new Gui(this);
@@ -102,9 +102,8 @@ public class Controller
 	{
 		gui.getLblPreisPizza().setText(((Pizza) gui.getComboBoxPizza().getSelectedItem()).getPreis() + " €");
 	}
-	
+
 	public void gesamtPreisBerechnen()
 	{
-		//TODOberechnung!!!!!
 	}
 }

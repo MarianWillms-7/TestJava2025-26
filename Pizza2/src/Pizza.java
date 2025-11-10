@@ -13,8 +13,7 @@ public class Pizza
 		this.name = name;
 		this.preis = preis;
 	}
-	
-	
+
 	public Pizza(String name, double preis, ArrayList<Groesse> groesse, ArrayList<Extras> extras)
 	{
 		super();
@@ -43,32 +42,26 @@ public class Pizza
 	{
 		this.preis = preis;
 	}
-	
-	
 
 	public ArrayList<Groesse> getGroesse()
 	{
 		return groesse;
 	}
 
-
 	public void setGroesse(ArrayList<Groesse> groesse)
 	{
 		this.groesse = groesse;
 	}
-
 
 	public ArrayList<Extras> getExtras()
 	{
 		return extras;
 	}
 
-
 	public void setExtras(ArrayList<Extras> extras)
 	{
 		this.extras = extras;
 	}
-
 
 	@Override
 	public String toString()

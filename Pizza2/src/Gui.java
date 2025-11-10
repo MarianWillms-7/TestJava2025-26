@@ -112,6 +112,7 @@ public class Gui extends JFrame
 				public void actionPerformed(ActionEvent e)
 				{
 					controller.hinzufuegen((Pizza)getComboBoxPizza().getSelectedItem(), (Groesse)getComboBoxGroesse().getSelectedItem(), (Extras)getComboBoxExtras().getSelectedItem());
+					controller.gesamtPreisBerechnen();
 				}
 			});
 			btnHinzufuegen.setFont(new Font("Tahoma", Font.PLAIN, 14));

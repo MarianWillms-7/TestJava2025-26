@@ -47,7 +47,7 @@ public class Warenkorb
 	@Override
 	public String toString()
 	{
-		return "pizza=" + pizza + ", groesse=" + groesse + ", extras=" + extras;
+		return "Pizza: " + pizza + ", Groesse: " + groesse + ", Extras: " + extras;
 	}
 
 }
