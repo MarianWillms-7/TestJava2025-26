@@ -1,3 +1,6 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 
 import javax.swing.DefaultComboBoxModel;
@@ -22,6 +25,7 @@ public class Controller
 	public Controller()
 	{
 		this.gui = new Gui(this);
+		LesenDatei.main(null);
 		pizzaErstellen();
 		fuelleListen();
 		setModels();
